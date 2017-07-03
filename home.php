@@ -43,6 +43,7 @@
 <div id="showUpContainer1" class="showUpContainer" style="display:flex">
 
   <div class="rowForEntry">
+    
     <div class="calendarImageBox">
         <img src="icon/calendarIcon.png" />
         <span> 21 </span>
