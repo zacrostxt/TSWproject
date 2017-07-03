@@ -20,10 +20,6 @@
 
   include("php/header.php");
 
-  //dovrebbe andare
-  ///aaaaa
-  //asdasdsadsadsadsad
-  //asdasdsadsadssad
 
 ?>
 
