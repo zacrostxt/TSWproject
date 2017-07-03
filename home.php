@@ -32,7 +32,7 @@
 <menu id="homeMenu">
 
   <ul>
-    <li class="menuLink" value="showUpContainer1">Partite Prenotate </li>
+    <li class="menuLink menuLinkActive" value="showUpContainer1">Partite Prenotate </li>
     <li class="menuLink" value="showUpContainer2"> Successi </li>
     <li class="menuLink" value="showUpContainer3"> Foto </li>
   </ul>
@@ -40,7 +40,7 @@
 
 </menu>
 
-<div id="showUpContainer1" class="showUpContainer" style="background-color:red"> </div>
+<div id="showUpContainer1" class="showUpContainer" style="background-color:red;display:block"> </div>
 <div id="showUpContainer2" class="showUpContainer" style="background-color:yellow"> </div>
 <div id="showUpContainer3" class="showUpContainer" style="background-color:blue"> </div>
 
