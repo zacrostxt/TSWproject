@@ -47,3 +47,14 @@ body{
 .menuLinkActive{
   color: green;
 }
+
+.showUpContainer{
+  display: none;
+  border: 1px solid black;
+  width: 85%;
+  height: 700px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}

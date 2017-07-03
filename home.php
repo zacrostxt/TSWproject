@@ -32,17 +32,44 @@
 <menu id="homeMenu">
 
   <ul>
-    <li class="menuLink">Partite Prenotate </li>
-    <li class="menuLink"> Successi </li>
-    <li class="menuLink"> Foto </li>
+    <li class="menuLink" value="showUpContainer1">Partite Prenotate </li>
+    <li class="menuLink" value="showUpContainer2"> Successi </li>
+    <li class="menuLink" value="showUpContainer3"> Foto </li>
   </ul>
 
 
 </menu>
 
+<div id="showUpContainer1" class="showUpContainer" style="background-color:red"> </div>
+<div id="showUpContainer2" class="showUpContainer" style="background-color:yellow"> </div>
+<div id="showUpContainer3" class="showUpContainer" style="background-color:blue"> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript">
  var menuLink = document.getElementsByClassName('menuLink');
- 
+
 
 for (var i = 0; i < menuLink.length;i++){
   menuLink[i].onclick = menuLinkClick;

@@ -13,5 +13,17 @@
 
     this.className += " menuLinkActive";
 
+  var showUpContainers = document.getElementsByClassName('showUpContainer');
+
+  for (var i = 0; i < menuLink.length;i++){
+    showUpContainers[i].style.display = "none";
+
+  }
+
+  var showUpContainerID = this.getAttribute('value');
+  var showUpContainer = document.getElementById(showUpContainerID);
+
+  showUpContainer.style.display = "block";
+
 
   };
