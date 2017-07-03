@@ -40,9 +40,34 @@
 
 </menu>
 
-<div id="showUpContainer1" class="showUpContainer" style="background-color:red;display:block"> </div>
+<div id="showUpContainer1" class="showUpContainer" style="display:flex">
+
+  <div class="rowForEntry">
+    <div class="calendarImageBox">
+        <img src="icon/calendarIcon.png" />
+        <span> 21 </span>
+     </div>
+
+    <div class="infoBox">
+      <span> ORE 21:00 </span>
+      <span> loco : Salerno </span>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
 <div id="showUpContainer2" class="showUpContainer" style="background-color:yellow"> </div>
 <div id="showUpContainer3" class="showUpContainer" style="background-color:blue"> </div>
+
+
 
 
 
