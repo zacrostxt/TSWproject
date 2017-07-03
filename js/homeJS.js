@@ -23,7 +23,7 @@
   var showUpContainerID = this.getAttribute('value');
   var showUpContainer = document.getElementById(showUpContainerID);
 
-  showUpContainer.style.display = "block";
+  showUpContainer.style.display = "flex";
 
 
   };
