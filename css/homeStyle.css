@@ -86,6 +86,7 @@ body{
   cursor: pointer;
 }
 
+
 .calendarImageBox span{
   position: absolute;
   top: 30%;
@@ -93,6 +94,8 @@ body{
   font-size: 180%;
   cursor: pointer;
 }
+
+
 
 .infoBox{
   width: 50%;
@@ -103,7 +106,6 @@ body{
 
 }
 
-.infoBox > span {
+.infoBox  > span {
     margin-right: 5%;
-
 }

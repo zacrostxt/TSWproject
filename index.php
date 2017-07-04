@@ -31,7 +31,7 @@
   <title>Homepage</title>
   <!-- Link al CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/registrationShowUp.js"></script>
+  <script type="text/javascript" src="js/indexJS.js"></script>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
 </head>
@@ -157,6 +157,8 @@
     var btn = document.getElementById("nav-login-btn");
     // Prelevo il riferimento allo <span> che chiude la modal
     var span = document.getElementsByClassName("close")[0];
+    // Prelevo riferimento per lo startSlideShow
+    var backgroundImageTarget = document.getElementsByClassName("hero")[0];
 
     // Quando l'utente clicca sul pulsante, apre la modal
     btn.onclick = function() {
@@ -173,7 +175,16 @@
       if (event.target == modal) {
           modal.style.display = "none";
       }
+
+
     }
+
+    //background-image: url('../img/main_bg.jpg');
+    var imageArray =["img/main_bg.jpg",'img/pallavolo.jpg','img/basket.jpg'];
+
+    startSlideShow(backgroundImageTarget,imageArray,0,imageArray.length);
+
+
   </script>
 </body>
 </html>
