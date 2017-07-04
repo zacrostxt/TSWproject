@@ -27,3 +27,28 @@ xmlhttp.open("GET", "register.php", true);
 xmlhttp.send();
 
 }
+//background-image: url('../img/main_bg.jpg');
+//var imageArray =["img/main_bg.jpg",'img/pallavolo.jpg'];
+
+
+
+function startSlideShow(target,imageArray,pos,length){
+
+  setTimeout(function(){
+    target.classList.toggle('fade');
+
+
+    setTimeout(function(){
+      target.style.backgroundImage = "url('" + imageArray[pos] + "')";
+      target.classList.toggle('fade');
+  }, 10);
+
+    if(pos+1 >= length){
+      pos = 0;
+    }else { pos++;}
+
+    startSlideShow(target,imageArray,pos,length);
+
+}, 6000);
+
+}

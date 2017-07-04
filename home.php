@@ -43,15 +43,16 @@
 <div id="showUpContainer1" class="showUpContainer" style="display:flex">
 
   <div class="rowForEntry">
-    
+
     <div class="calendarImageBox">
         <img src="icon/calendarIcon.png" />
         <span> 21 </span>
      </div>
 
     <div class="infoBox">
-      <span> ORE 21:00 </span>
-      <span> loco : Salerno </span>
+      <span> Ore  21:00 </span>
+      <span> Giorno  21/07/2017</span>
+      <span> Loco  Salerno </span>
     </div>
 
   </div>
