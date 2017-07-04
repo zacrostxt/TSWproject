@@ -45,7 +45,7 @@
   <div class="rowForEntry">
 
     <div class="calendarImageBox">
-        <img src="icon/calendarIcon.png" />
+        <img src="img/icons/calendarIcon.png" />
         <span> 21 </span>
      </div>
 
