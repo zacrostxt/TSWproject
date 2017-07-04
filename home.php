@@ -40,13 +40,34 @@
 
 </menu>
 
+
+
+    <div id="crossTooltip">
+        <p> Sicuro di voler abbandonare l'evento?</p>
+        <input type="button" value="Conferma"/>
+    </div>
+
+
 <div id="showUpContainer1" class="showUpContainer" style="display:flex">
 
   <div class="rowForEntry">
 
-    <div class="calendarImageBox">
+    <div class="calendarImageBox tooltip">
+
         <img src="img/icons/calendarIcon.png" />
+        <div class="tooltipDiv">
+
+          <div> Ore  21:00 </div>
+          <div> Giorno  21/07/2017</div>
+          <div> Loco  Salerno </div>
+
+        </div>
+
+
         <span> 21 </span>
+
+
+
      </div>
 
     <div class="infoBox">
@@ -55,13 +76,15 @@
       <span> Loco  Salerno </span>
     </div>
 
+
+
+    <div class="crossDiv tooltip">
+
+        <img src="img/icons/redCross.svg" alt="delete"/>
+    </div>
+
+
   </div>
-
-
-
-
-
-
 
 
 </div>
@@ -76,26 +99,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script type="text/javascript">
  var menuLink = document.getElementsByClassName('menuLink');
+ var
 
 
 for (var i = 0; i < menuLink.length;i++){

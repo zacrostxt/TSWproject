@@ -159,6 +159,8 @@
     var span = document.getElementsByClassName("close")[0];
     // Prelevo riferimento per lo startSlideShow
     var backgroundImageTarget = document.getElementsByClassName("hero")[0];
+    //Informazione per la posizione delle foto (slideShow)
+    var imageArray =["img/main_bg.jpg",'img/pallavolo.jpg','img/basket.jpg'];
 
     // Quando l'utente clicca sul pulsante, apre la modal
     btn.onclick = function() {
@@ -179,9 +181,9 @@
 
     }
 
-    //background-image: url('../img/main_bg.jpg');
-    var imageArray =["img/main_bg.jpg",'img/pallavolo.jpg','img/basket.jpg'];
 
+
+    // Fa partire lo slideShow
     startSlideShow(backgroundImageTarget,imageArray,0,imageArray.length);
 
 
