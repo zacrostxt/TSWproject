@@ -8,6 +8,11 @@ body{
   position: relative;
 }
 
+.crossTooltip.visible{
+  visibility: visible;
+  opacity: 1;
+}
+
 .tooltip .tooltipDiv{
     font-size: 90%;
     visibility: hidden;
@@ -165,6 +170,7 @@ box-shadow: 0 4px 10px 0 rgba(89, 79, 59, 0.3), 0 6px 20px 0 rgba(89, 79, 59, 0.
 }
 
 .crossDiv{
+  position: relative;
   width: 5%;
   height: 25%;
   min-width: 30px;
@@ -181,10 +187,7 @@ box-shadow: 0 4px 10px 0 rgba(89, 79, 59, 0.3), 0 6px 20px 0 rgba(89, 79, 59, 0.
 
 }
 
-#crossTooltip{
-  font-size: 90%;
-
-
+.crossTooltip{
   background-color: rgba(250,250,250,1);
   border-top: 1px solid rgba(29,85,146,0.7);
   border-bottom: 1px solid rgba(29,85,146,0.4);
@@ -195,33 +198,43 @@ box-shadow: 0 4px 10px 0 rgba(89, 79, 59, 0.3), 0 6px 20px 0 rgba(89, 79, 59, 0.
   position: absolute;
 
   text-align: center;
-  padding: 10pt 5pt 10pt 10pt;
+  padding: 0pt 15pt 5pt 15pt;
   border-radius: 6px;
 
+  visibility: hidden;
   z-index: 1;
-  opacity: 0;
+  opacity:0;
   transition: 1s;
 
-position: fixed;
- width: 150pt;
+ width: 90pt;
 
- visibility: visible;
- opacity: 1;
+
  color: black;
  font-size: 8pt;
- left: 42%;
- top: 40%;
-
+ left: -40pt;
+ bottom: 145%;
 }
 
-#crossTooltip > p {
-  font-size: 10.5pt;
-  margin-bottom: 8pt;
-
+.crossTooltip > i{
+font-size: 145%;
+float: right;
+color: red;
+cursor: pointer;
+z-index: 2;
+position: relative;
+top: 5pt;
+right: -5pt;
 }
 
-#crossTooltip > input{
-  font-size: 12pt;
+.crossTooltip > p {
+  font-size: 8.5pt;
+  clear: right;
+  margin-top: 15pt;
+  font-weight: bold;
+}
+
+.crossTooltip > input{
+  font-size: 10pt;
   width: 80%;
   margin: auto;
   background-color: rgba(73,144,226,1);
@@ -230,9 +243,9 @@ position: fixed;
   border: none;
   opacity: 0.8;
   cursor: pointer;
-  margin-top: 5pt;
+  margin-top: 0pt;
 }
-#crossTooltip > input:hover{
+.crossTooltip > input:hover{
   box-shadow: 0 0px 5px 0px rgba(89, 79, 59, 0.8);
 
 }

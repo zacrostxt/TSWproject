@@ -8,6 +8,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Homepage</title>
+    <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Link al CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/headerStyle.css">
@@ -42,10 +44,7 @@
 
 
 
-    <div id="crossTooltip">
-        <p> Sicuro di voler abbandonare l'evento?</p>
-        <input type="button" value="Conferma"/>
-    </div>
+
 
 
 <div id="showUpContainer1" class="showUpContainer" style="display:flex">
@@ -78,13 +77,20 @@
 
 
 
-    <div class="crossDiv tooltip">
+    <div class="crossDiv">
+
+      <div class="crossTooltip">
+          <i class="fa fa-close"></i>
+          <p> Sicuro di voler abbandonare l'evento?</p>
+          <input type="button" value="Conferma"/>
+      </div>
 
         <img src="img/icons/redCross.svg" alt="delete"/>
     </div>
 
 
   </div>
+
 
 
 </div>
@@ -101,12 +107,32 @@
 
 <script type="text/javascript">
  var menuLink = document.getElementsByClassName('menuLink');
- 
+ var crossDiv = document.getElementsByClassName('crossDiv');
+var crossDivCross = crossDiv[0].getElementsByClassName('fa');
+
 
 
 for (var i = 0; i < menuLink.length;i++){
   menuLink[i].onclick = menuLinkClick;
 }
+
+for (var i = 0; i < crossDiv.length;i++){
+  //var crossDivCross = crossDiv.getElementsClassName('fa');
+  var crossDivCross = crossDiv[i].getElementsByClassName("fa-close")[0];
+
+
+  crossDivCross.onclick = function(){
+    crossDivCrossClick(this);
+  };
+
+  crossDiv[i].onclick = function(){
+    crossDivClick(this);
+  };
+
+
+
+}
+
 
 </script>
 

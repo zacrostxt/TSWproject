@@ -27,3 +27,18 @@
 
 
   };
+
+  function crossDivClick(crossDiv){
+    var crossTooltip = crossDiv.getElementsByClassName('crossTooltip')[0];
+
+    //var crossTooltip = target.getElementsByClassName('crossTooltip')[0];
+      crossTooltip.classList.toggle('visible');
+
+  };
+
+  function crossDivCrossClick(crossDivCross){
+    var crossTooltip =   crossDivCross.parent('crossTooltip');
+    crossTooltip.classList.toggle('visible');
+
+
+  };

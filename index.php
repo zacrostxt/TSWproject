@@ -84,8 +84,14 @@
       <h1>Progetto</h1> <!-- Titolo -->
       <h3>Partecipa alle partite nella tua zona!</h3> <!-- Sottotitolo -->
       <a class="button" onclick="showRegistrationPanel()">Inizia</a> <!-- Call to Action: invito a registrarsi -->
-      <div id="registrationPanel">  </div>
-    </div>
+
+      <div id="registrationPanel">
+
+      </div>
+      <div id="glassPanel"> </div>
+
+      </div>
+
   </div>
 
   <div id="info">
@@ -161,6 +167,9 @@
     var backgroundImageTarget = document.getElementsByClassName("hero")[0];
     //Informazione per la posizione delle foto (slideShow)
     var imageArray =["img/main_bg.jpg",'img/pallavolo.jpg','img/basket.jpg'];
+    //Riferimento al pannello per chiudere il registrationPanel pop-Up
+    var registrationPanel = document.getElementById('registrationPanel');
+    var glassPanel = document.getElementById('glassPanel');
 
     // Quando l'utente clicca sul pulsante, apre la modal
     btn.onclick = function() {
@@ -178,8 +187,16 @@
           modal.style.display = "none";
       }
 
-
     }
+
+    document.onclick = function(event){
+        if(event.target == glassPanel ){
+          glassPanel.style.display = "none";
+        //  registrationPanel.style.display = "none";
+          registrationPanel.classList.toggle('fade');
+        }
+    }
+  //  registrationPanelCross.onclick = function()
 
 
 
