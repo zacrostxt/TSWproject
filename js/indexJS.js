@@ -27,10 +27,6 @@ xmlhttp.open("GET", "register.php", true);
 xmlhttp.send();
 
 }
-//background-image: url('../img/main_bg.jpg');
-//var imageArray =["img/main_bg.jpg",'img/pallavolo.jpg'];
-
-
 
 function startSlideShow(target,imageArray,pos,length){
 
@@ -38,10 +34,10 @@ function startSlideShow(target,imageArray,pos,length){
     target.classList.toggle('fade');
 
 
-    setTimeout(function(){
+    
       target.style.backgroundImage = "url('" + imageArray[pos] + "')";
       target.classList.toggle('fade');
-  }, 10);
+
 
     if(pos+1 >= length){
       pos = 0;
