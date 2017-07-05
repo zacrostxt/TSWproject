@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   // Se è presente l'utente, count è uguale ad 1
   if($result) {
      $_SESSION['login_email'] = $email; // Salvo l'email nell'array di sessione
-     header("Location: bacheca.php"); // Redirect a bacheca.php
+     header("Location: home.php"); // Redirect a bacheca.php
   }else {
      $error = "Email e/o password invalidi.";
      echo "$error";

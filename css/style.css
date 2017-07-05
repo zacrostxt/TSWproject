@@ -3,6 +3,13 @@ body{
   margin: 0;
   overflow-x: hidden;
 }
+
+#registrationPanel.fade {
+  display: block;
+  opacity: 1;
+}
+
+
 /* Hero Image */
 .hero{
   background-image: url('../img/main_bg.jpg');
@@ -18,9 +25,7 @@ body{
 
 opacity:0;
 }
-.hero.fadeIn {
-opacity:1;
-}
+
 
 .hero-content{
   width: auto;
@@ -112,17 +117,34 @@ opacity:1;
 
 #registrationPanel{
   display: none; /* Default: hidden */
+  opacity: 0;
+  transition: 1s;
+  border: 1px solid rgba(45,42,16,0.4);
   position: absolute;
   z-index: 1; /* Top */
   left: 20%;
   top: 80px;
   width: 60%;
-  /*min-width: 500px;*/
-  height: 100%;
-  background-color: rgba(109,147,69,0.95);
-  border: 1px solid black;
+
+  border-radius: 10px;
+  height: 550pt;
+  max-height:100%;
+  background-color: #6699CC;
+  box-shadow: 0 4px 10px 0 rgba(89, 79, 59, 0.3), 0 6px 20px 0 rgba(89, 79, 59, 0.29);
   overflow: auto; /* Enable scrool */
 }
+
+#glassPanel{
+
+  width: 100%;
+  height: 130%;
+  top: 30px;
+  left: 0;
+  display: none;
+  position: absolute;
+  z-index: 0;
+}
+
 /* Add Animation */
 @-webkit-keyframes fadeIn {
   from{
